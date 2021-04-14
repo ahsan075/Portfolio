@@ -1,0 +1,521 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+/* ===Navigation BAR=== */
+
+.container{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ============ LOGO PART ============ */
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-left: 3%;
+    margin-top: 2%;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+  /* === LOGO DIV === */
+
+.span1{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 46px;
+    font-size: 25px;
+    font-weight: 700;
+    height: 46px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    margin-right: 3%;
+    transition: color 0.3s ease-in,border 0.3s ease-in;
+}
+
+  /* === CHANGIN LOGO DIV BY HOVERING LOGO === */
+
+.logo:hover .span1{
+    color: #878A8F;
+    border: 3px solid #878A8F;
+}
+
+  /* === MENU CLICK LOGO DIV CHANGING FORM === */
+
+.span1up{
+   color: #878A8F;
+   border: 3px solid #878A8F;
+}
+
+  /* === MENU CLICK LOGO DIV CHANGING FORM CHANGING BY HOVERING LOGO === */
+
+.logo:hover .span1up{
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+  /* === WELCOME SECTION LOGO DIV === */
+
+.yes .span1{
+    color: #878A8F;
+    border: 3px solid #878A8F;
+}
+
+
+
+
+  /* === LOGO SVG === */
+
+  #svg3{
+    display: inline-block;
+}
+#svg3 path{
+    transition:fill 0.3s ease-in;
+}
+
+  /* === CHANGIN LOGO SVG BY HOVERING LOGO === */
+
+.logo:hover svg path{
+    fill: #878A8F;
+}
+
+  /* === MENU CLICK LOGO SVG CHANGING FORM === */
+
+.svgup path{
+    fill: #878A8F;
+}
+
+  /* === MENU CLICK LOGO SVG CHANGING FORM CHANGING BY HOVERING LOGO === */
+
+.logo:hover .svgup path{
+    fill: rgb(255, 255, 255);
+}
+
+  /* === WELCOME SECTION LOGO SVG === */
+
+.yes #svg3 path{
+    fill: #878A8F;
+}
+
+
+
+  /* === END OF LOGO PART === */
+
+
+
+
+
+
+
+
+
+
+  /* ============ LIST ITEMS ============ */
+
+
+    /* === LIST ITEM MAIN DIV === */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    background: #0F141E;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease-out;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+  /* === MENU CLICK LIST ITEM MAIN DIV CHANGING FORM === */
+
+.openup{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+    /* === LIST ITEM MAIN DIV CHILD UL === */
+
+.list{
+    list-style: none;
+    position: absolute;
+    width: 600px;
+    overflow: hidden;
+}
+
+    /* === LIST ITEM === */
+
+.menu2{
+    margin-bottom: 1.5rem;
+    color: #878A8F;
+}
+
+.list-item{
+    font-size: 4.7rem;
+    font-weight: 900;
+}
+
+    /* === LIST ITEM CHILDREN A === */
+
+.list-item a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #878A8F;
+}
+
+    /* === LIST ITEM CHILDREN A HOVER EFFECT === */
+
+.list-item:hover a{
+    color: rgb(255, 255, 255);
+}
+
+    /* === LIST ITEM CHILDREN SPAN === */
+
+.line1{
+    position: absolute;
+    width: 400px;
+    height: 7px;
+    background-color: #FFFFFF;
+    top: 16.27%;
+    left: -70%;
+    transition: 0.4s ease;
+}
+.line2{
+    position: absolute;
+    width: 400px;
+    height: 7px;
+    background-color: #FFFFFF;
+    top: 35.5%;
+    left: -70%;
+    transition: 0.4s;
+}
+.line3{
+    position: absolute;
+    width: 400px;
+    height: 7px;
+    background-color: #FFFFFF;
+    top: 53.5%;
+    left: -70%;
+    transition: 0.4s;
+}
+.line4{
+    position: absolute;
+    width: 400px;
+    height: 7px;
+    background-color: #FFFFFF;
+    top: 72.5%;
+    left: -70%;
+    transition: 0.4s;
+}
+.line5{
+    position: absolute;
+    width: 400px;
+    height: 7px;
+    background-color: #FFFFFF;
+    top: 91%;
+    left: -70%;
+    transition: 0.4s;
+}
+
+    /* === LIST ITEM CHILDREN SPAN HOVER EFFECT === */
+
+.list-item:hover .line1{
+    left: 14%;
+    width: 90px;
+}
+.list-item:hover .line2{
+    left: 15%;
+    width: 90px;
+}
+.list-item:hover .line3{
+    left: 6.5%;
+    width: 90px;
+}
+.list-item:hover .line4{
+    left: 13%;
+    width: 90px;
+}
+.list-item:hover .line5{
+    left: 7.5%;
+    width: 90px;
+}
+
+    /* === LIST ITEM CHILDREN SPAN ACTIVE NOTATION === */
+
+.active .line1{
+    left: 14%;
+    width: 90px;
+}
+.active .line2{
+    left: 15%;
+    width: 90px;
+}
+.active .line3{
+    left: 6.5%;
+    width: 90px;
+}
+.active .line4{
+    left: 13%;
+    width: 90px;
+}
+.active .line5{
+    left: 7.5%;
+    width: 90px;
+}
+
+
+/* === END OF LIST ITEM PART === */
+
+
+
+
+
+
+
+
+
+
+  /* ============ Toggle MENU ============ */
+
+
+/* === MAIN DIV TOOGLE BAR === */
+
+.toggle-bar{
+    position: absolute;
+    display: inline-flex;
+    right: 3%;
+    z-index: 200;
+    transition: 0.3s;
+    top: 60%;
+    cursor: pointer;
+}
+
+/* === WELCOME SECTION MAIN DIV TOOGLE BAR === */
+
+.yes .toggle-bar{
+    display: none;
+}
+
+/* === MAIN DIV TOOGLE BAR CHILDREN SPAN === */
+
+.menu1{
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* === MAIN DIV TOOGLE BAR CHILDREN SPAN HOVER EFFECT === */
+
+.toggle-bar:hover .menu1{
+    color: #878A8F;
+}
+
+/* === AFTER CLICKING MAIN DIV TOOGLE BAR CHILDREN SPAN CHANGING FORM === */
+
+.open .menu1{
+    color: #878A8F;
+}
+
+/* === AFTER CLICKING MAIN DIV TOOGLE BAR CHILDREN SPAN CHANGING FORM HOVER EFFECT === */
+
+.open:hover .menu1{
+    color: rgb(255, 255, 255);
+}
+
+
+/* === MAIN DIV TOOGLE BAR CHILDREN BARS === */
+
+.bars{
+    list-style: none;
+}
+
+/* === BARS CHILDREN LI === */
+
+.bars li{
+    background: #000;
+    margin-bottom: 6px;
+    width: 25px;
+    height: 2px;
+    transition: 0.2s;
+}
+
+/* === BARS CHILDREN LI HOVER EFFECT === */
+
+.toggle-bar:hover li{
+    background: #878A8F;
+}
+.close:hover  li:nth-child(1){
+    transform:translateY(-4px)
+}
+.close:hover  li:nth-child(3){
+    transform:translateY(4px)
+}
+
+/* === AFTER CLICKING BARS CHILDREN LI CHANGING FORM === */
+
+.open li:nth-child(1){
+    transform:rotate(45deg) translateY(7px) translateX(7px);
+    transition:background 0.15s linear,transform 0.15s linear;
+    background: #878A8F;
+}
+.open li:nth-child(3){
+    transform:rotate(-45deg) translateY(-5px) translateX(4px);
+    transition:background 0.15s linear,transform 0.15s linear;
+    background: #878A8F;
+}
+.open li:nth-child(2){
+    transform: translateX(10px);
+    background: transparent;
+   
+}
+
+/* === AFTER CLICKING BARS CHILDREN LI CHANGING FORM HOVER EFFECT === */
+
+.open:hover li:nth-child(1){
+    transform:rotate(135deg) translateY(-7px) translateX(7px);
+    background: rgb(255, 255, 255);
+}
+.open:hover li:nth-child(3){
+    transform: rotate(45deg) translateY(-5px) translateX(-4px); 
+    background: rgb(255, 255, 255);
+}
+
+/* === END OF Toggle MENU === */
+
+
+
+
+/* === FINALLY END OF NAVIGATION BAR === */
+
+
+
+
+
+
+
+
+
+
+
+  /* ============ Scroling Menu IF NEED ============ */
+
+
+/* .menuActive{
+    background:#1b1b1b;
+}
+
+.menuActive .logo{
+    margin-top: 0%;
+}
+
+.menuActive .logo svg path{
+    fill: #878A8F;
+}
+
+.menuActive .logo:hover svg path{
+    fill: #ffffff;
+}
+
+
+.menuActive .span1{
+    color: #878A8F;
+    border: 3px solid #878A8F;
+}
+.menuActive .logo:hover .span1{
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+.menuActive .toggle-bar{
+    margin-top: 1.3%;
+    margin-bottom: 1.3%;
+}
+
+.menuActive .bars li{
+    background: #878A8F;
+}
+.menuActive .toggle-bar:hover .bars li{
+    background: #ffffff;
+}
+
+.menuActive .menu1{
+    color: #878A8F;
+}
+.menuActive .toggle-bar:hover .menu1{
+    color: #ffffff;
+} */
+
+
+
+
+
+/* === RESPONSIVE DESIGN === */
+
+@media only screen and (max-width:1200px){
+    .list-item{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+}
+
+
+@media only screen and (max-width:991px){
+    .list-item{
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .list-item{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    .line1,.line2,.line3,.line4,.line5{
+        display: none !important;
+    }
+    .active a{
+        color: #FFFFFF !important;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .list-item{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+}
